@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+ background-color: rgb(33, 37, 41) !important;
+}
+.hero{
+    background-color: rgb(33, 37, 41) !important;
+    color: white;
+}
+body{
+    background-color: rgb(33, 37, 41) !important;
+}
+.features h4, .features h2, .features p{
+    color: white !important;
+}
+.feature-icon-small {
+    width: 3rem;
+    height: 3rem;
+  }

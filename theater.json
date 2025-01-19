@@ -1,0 +1,114 @@
+{
+  "Performance": [
+    {
+      "performanceId": 1,
+      "title": "Hamlet",
+      "type": "play",
+      "performanceDate": "2025-02-10",
+      "performanceTime": "18:30",
+      "duration": "2 hours 30 minutes",
+      "img": "hamlet.jpg"
+    },
+    {
+      "performanceId": 2,
+      "title": "The Phantom of the Opera",
+      "type": "musical",
+      "performanceDate": "2025-03-15",
+      "performanceTime": "19:00",
+      "duration": "2 hours 45 minutes",
+      "img": "phantom.jpg"
+    },
+    {
+      "performanceId": 3,
+      "title": "Swan Lake",
+      "type": "ballet",
+      "performanceDate": "2025-04-20",
+      "performanceTime": "20:00",
+      "duration": "2 hours",
+      "img": "swan.jpg"
+    },
+    {
+      "performanceId": 4,
+      "title": "Macbeth",
+      "type": "play",
+      "performanceDate": "2025-05-05",
+      "performanceTime": "18:00",
+      "duration": "2 hours 15 minutes",
+      "img": "macbeth.jpg"
+    },
+    {
+      "performanceId": 5,
+      "title": "Les Misérables",
+      "type": "musical",
+      "performanceDate": "2025-06-10",
+      "performanceTime": "19:30",
+      "duration": "3 hours",
+      "img": "les.jpg"
+    },
+    {
+      "performanceId": 6,
+      "title": "The Lion King",
+      "type": "musical",
+      "performanceDate": "2025-07-15",
+      "performanceTime": "18:00",
+      "duration": "2 hours 45 minutes",
+      "img": "lionking.jpg"
+    },
+    {
+      "performanceId": 7,
+      "title": "Romeo and Juliet",
+      "type": "play",
+      "performanceDate": "2025-08-20",
+      "performanceTime": "20:00",
+      "duration": "2 hours 30 minutes",
+      "img": "romeoandjuliet.jpg"
+    },
+    {
+      "performanceId": 8,
+      "title": "Cats",
+      "type": "musical",
+      "performanceDate": "2025-09-10",
+      "performanceTime": "19:00",
+      "duration": "2 hours 40 minutes",
+      "img": "cats.jpg"
+    }
+  ],
+  "Patron": [
+    {
+      "patronId": 1,
+      "userName": "Yared Mengiste",
+      "email": "yaredmengiste@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "Seats": [
+    {
+      "id": "a",
+      "type": "orchestra",
+      "price": 65
+    },
+    {
+      "id": "b",
+      "type": "mezzanine",
+      "price": 55
+    },
+    {
+      "id": "c",
+      "type": "balcony",
+      "price": 45
+    }
+  ],
+  "Reservation": [
+    {
+      "id": 1,
+      "performanceId": 1,
+      "seatId": [
+        "a1"
+      ],
+      "patronId": 1,
+      "reservationDate": "2025-01-10",
+      "reservationTime": "10:00",
+      "price": 65
+    }
+  ]
+}

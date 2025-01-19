@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles/sytle.css" />
+    <link rel="stylesheet" href="./styles/seats.css" />
+    <link rel="stylesheet" href="./styles/poster.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="p-3 mb-3 border-bottom">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+          >
+            <img
+              class="bi me-2"
+              width="60"
+              role="img"
+              aria-label="Bootstrap"
+              src="./images/logo.png"
+              style="border-radius: 30%"
+            />
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="#hero-part" class="nav-link px-2 text-secondary">Home</a>
+            </li>
+            <li><a href="#" class="nav-link px-2 text-white">Contact</a></li>
+          </ul>
+
+          <div class="text-end">
+            <a href="/" class="btn btn-warning">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="posters-container">
+      <% for(let i=0; i < performance.length; i++) {%>
+      <div class="theater-poster">
+        <img src="./images/<%= performance[i].img %>" alt="Theater Poster" />
+        <div class="details">
+          <div class="title"><%= performance[i].title %></div>
+          <div class="type">Type: <%= performance[i].type %></div>
+          <div class="duration">Duration: <%= performance[i].duration %></div>
+          <div class="date">
+            Date: <%= performance[i].performanceDate %> at <%=
+            performance[i].performanceTime %>
+          </div>
+          <button
+            id="<%= performance[i].performanceId  %>"
+            class="btn btn-warning bookP"
+          >
+            Book Now
+          </button>
+        </div>
+      </div>
+      <% } %>
+    </div>
+
+    <div class="reservation-container">
+      <div class="theater">
+        <div class="stage"></div>
+        <div class="seats-a">
+          <div class="seat-row-left-right">
+            <% for(let i = 0; i < 48; i++) { %> <%- `
+            <div id="a${i}" class="seat-a fo" data-price="65">a${i}</div>
+            ` %> <% } %>
+          </div>
+          <div class="seat-row-between">
+            <% for(let i = 48; i < 144; i++) { %> <%- `
+            <div id="a${i}" class="seat-a fo" data-price="65">a${i}</div>
+            ` %> <% } %>
+          </div>
+          <div class="seat-row-left-right">
+            <% for(let i = 144; i < 192; i++) { %> <%- `
+            <div id="a${i}" class="seat-a fo" data-price="65">a${i}</div>
+            ` %> <% } %>
+          </div>
+        </div>
+        <div class="seats-a">
+          <div class="seat-row-left-right">
+            <% for(let i = 0; i < 64; i++) { %> <%- `
+            <div id="b${i}" class="seat-b fo" data-price="55">b${i}</div>
+            ` %> <% } %>
+          </div>
+          <div class="seat-row-between">
+            <% for(let i = 64; i < 192; i++) { %> <%- `
+            <div id="b${i}" class="seat-b fo" data-price="55">b${i}</div>
+            ` %> <% } %>
+          </div>
+          <div class="seat-row-left-right">
+            <% for(let i = 192; i < 256; i++) { %> <%- `
+            <div id="b${i}" class="seat-b fo" data-price="55">b${i}</div>
+            ` %> <% } %>
+          </div>
+        </div>
+        <div class="seats-a">
+          <div class="seat-row-left-right">
+            <% for(let i = 0; i < 48; i++) { %> <%- `
+            <div id="c${i}" class="seat-c fo" data-price="45">c${i}</div>
+            ` %> <% } %>
+          </div>
+          <div class="seat-row-between">
+            <% for(let i = 48; i < 144; i++) { %> <%- `
+            <div id="c${i}" class="seat-c fo" data-price="45">c${i}</div>
+            ` %> <% } %>
+          </div>
+          <div class="seat-row-left-right">
+            <% for(let i = 144; i < 192; i++) { %> <%- `
+            <div id="c${i}" class="seat-c fo" data-price="45">c${i}</div>
+            ` %> <% } %>
+          </div>
+        </div>
+      </div>
+      <div class="booking-form">
+        <form action="/addReservation" method="POST">
+          <label for="price">Price</label>
+          <input type="text" name="price" id="price" value="0.0" readonly />
+          <input type="text" class="forInfo" name="performanceWrite" id="performanceWrite" value="0.0" readonly />
+          <input type="text" name="ud" class="forInfo" id="userIdChecker" value="0.0" readonly />
+
+          
+        </form>
+        <button id="bookR" class="btn btn-warning">Book</button>
+        <button id="cancelR" class="btn btn-outline-light me-2">
+          Cancel
+        </button>
+        <div class="performance_info">
+          <div class="pTitle">Title: </div>
+          <div class="pType">Type: </div>
+          <div class="pDuration">Duration: </div>
+          <div class="pDate">Date: </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

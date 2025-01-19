@@ -1,0 +1,360 @@
+{
+  "Performance": [
+    {
+      "performanceId": 1,
+      "title": "Hamlet",
+      "type": "play",
+      "performanceDate": "2025-02-10",
+      "performanceTime": "18:30",
+      "duration": "2 hours 30 minutes",
+      "img": "hamlet.jpg"
+    },
+    {
+      "performanceId": 2,
+      "title": "The Phantom of the Opera",
+      "type": "musical",
+      "performanceDate": "2025-03-15",
+      "performanceTime": "19:00",
+      "duration": "2 hours 45 minutes",
+      "img": "phantom.jpg"
+    },
+    {
+      "performanceId": 3,
+      "title": "Swan Lake",
+      "type": "ballet",
+      "performanceDate": "2025-04-20",
+      "performanceTime": "20:00",
+      "duration": "2 hours",
+      "img": "swan.jpg"
+    },
+    {
+      "performanceId": 4,
+      "title": "Macbeth",
+      "type": "play",
+      "performanceDate": "2025-05-05",
+      "performanceTime": "18:00",
+      "duration": "2 hours 15 minutes",
+      "img": "macbeth.jpg"
+    },
+    {
+      "performanceId": 5,
+      "title": "Les Misérables",
+      "type": "musical",
+      "performanceDate": "2025-06-10",
+      "performanceTime": "19:30",
+      "duration": "3 hours",
+      "img": "les.jpg"
+    },
+    {
+      "performanceId": 6,
+      "title": "The Lion King",
+      "type": "musical",
+      "performanceDate": "2025-07-15",
+      "performanceTime": "18:00",
+      "duration": "2 hours 45 minutes",
+      "img": "lionking.jpg"
+    },
+    {
+      "performanceId": 7,
+      "title": "Romeo and Juliet",
+      "type": "play",
+      "performanceDate": "2025-08-20",
+      "performanceTime": "20:00",
+      "duration": "2 hours 30 minutes",
+      "img": "romeoandjuliet.jpg"
+    },
+    {
+      "performanceId": 8,
+      "title": "Cats",
+      "type": "musical",
+      "performanceDate": "2025-09-10",
+      "performanceTime": "19:00",
+      "duration": "2 hours 40 minutes",
+      "img": "cats.jpg"
+    }
+  ],
+  "Patron": [
+    {
+      "patronId": 1,
+      "userName": "Yared Mengiste",
+      "email": "yaredmengiste@gmail.com",
+      "password": "1234"
+    },
+    {
+      "patronId": 2,
+      "userName": "Leul Mengiste",
+      "email": "leul@gmail.com",
+      "password": "1234"
+    },
+    {
+      "patronId": 3,
+      "userName": "Yasser Abdulhafiz",
+      "email": "yass@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "Seats": [
+    {
+      "id": "a",
+      "type": "orchestra",
+      "price": 65
+    },
+    {
+      "id": "b",
+      "type": "mezzanine",
+      "price": 55
+    },
+    {
+      "id": "c",
+      "type": "balcony",
+      "price": 45
+    }
+  ],
+  "Reservation": [
+    {
+      "id": 1,
+      "performanceId": 1,
+      "seatId": [
+        "a1"
+      ],
+      "patronId": 1,
+      "reservationDate": "2025-01-10",
+      "reservationTime": "10:00",
+      "price": 65
+    },
+    {
+      "id": 2,
+      "performanceId": 1,
+      "seatId": [
+        "a3",
+        "a4",
+        "a5"
+      ],
+      "patronId": 1,
+      "reservationDate": "2025-01-07",
+      "reservationTime": "22:01:02",
+      "price": 195
+    },
+    {
+      "id": 3,
+      "performanceId": 1,
+      "seatId": [
+        "a98",
+        "a100",
+        "a101"
+      ],
+      "patronId": 1,
+      "reservationDate": "2025-01-07",
+      "reservationTime": "22:02:59",
+      "price": 195
+    },
+    {
+      "id": 4,
+      "performanceId": 1,
+      "seatId": [
+        "b46"
+      ],
+      "patronId": 2,
+      "reservationDate": "2025-01-07",
+      "reservationTime": "22:11:55",
+      "price": 55
+    },
+    {
+      "id": 5,
+      "performanceId": 1,
+      "seatId": [
+        "b28"
+      ],
+      "patronId": 2,
+      "reservationDate": "2025-01-07",
+      "reservationTime": "22:21:45",
+      "price": 55
+    },
+    {
+      "id": 6,
+      "performanceId": 1,
+      "seatId": [
+        "b43"
+      ],
+      "patronId": 2,
+      "reservationDate": "2025-01-07",
+      "reservationTime": "22:24:29",
+      "price": 55
+    },
+    {
+      "id": 7,
+      "performanceId": 1,
+      "seatId": [
+        "b33"
+      ],
+      "patronId": 2,
+      "reservationDate": "2025-01-07",
+      "reservationTime": "22:36:25",
+      "price": 55
+    },
+    {
+      "id": 8,
+      "performanceId": 1,
+      "seatId": [
+        "c67"
+      ],
+      "patronId": 1,
+      "reservationDate": "2025-01-07",
+      "reservationTime": "22:39:11",
+      "price": 45
+    },
+    {
+      "id": 9,
+      "performanceId": 1,
+      "seatId": [
+        "c86"
+      ],
+      "patronId": 2,
+      "reservationDate": "2025-01-07",
+      "reservationTime": "22:54:02",
+      "price": 45
+    },
+    {
+      "id": 10,
+      "performanceId": 1,
+      "seatId": [
+        "c72"
+      ],
+      "patronId": 2,
+      "reservationDate": "2025-01-07",
+      "reservationTime": "22:54:12",
+      "price": 45
+    },
+    {
+      "id": 11,
+      "performanceId": 1,
+      "seatId": [
+        "c97"
+      ],
+      "patronId": 2,
+      "reservationDate": "2025-01-07",
+      "reservationTime": "22:54:22",
+      "price": 45
+    },
+    {
+      "id": 12,
+      "performanceId": 4,
+      "seatId": [
+        "a20",
+        "a26",
+        "a27",
+        "a28",
+        "a29",
+        "a30",
+        "a36",
+        "a44",
+        "a64",
+        "a65",
+        "a66",
+        "a67",
+        "a68",
+        "a69",
+        "a70",
+        "a71",
+        "a72",
+        "a90",
+        "a105",
+        "a130",
+        "a138",
+        "a139",
+        "a140",
+        "a170",
+        "a171",
+        "b25",
+        "b29",
+        "b30",
+        "b34",
+        "b36",
+        "b43",
+        "b50",
+        "b52",
+        "b57",
+        "b61",
+        "b81",
+        "b102",
+        "b103",
+        "b104",
+        "b109",
+        "b113",
+        "b117",
+        "b123",
+        "b146",
+        "b149",
+        "b152",
+        "b163",
+        "b164",
+        "b175",
+        "b183",
+        "b185",
+        "b196",
+        "b204",
+        "b210",
+        "b211",
+        "b212",
+        "b213",
+        "b214",
+        "b220",
+        "b225",
+        "b228",
+        "b236",
+        "b244",
+        "b252",
+        "c21",
+        "c22",
+        "c23",
+        "c45",
+        "c66",
+        "c68",
+        "c70",
+        "c87",
+        "c88",
+        "c89",
+        "c109",
+        "c110",
+        "c114",
+        "c115",
+        "c116",
+        "c145",
+        "c157",
+        "c162",
+        "c163",
+        "c164",
+        "c186"
+      ],
+      "patronId": 3,
+      "reservationDate": "2025-01-08",
+      "reservationTime": "07:48:43",
+      "price": 4715
+    },
+    {
+      "id": 13,
+      "performanceId": 4,
+      "seatId": [
+        "a61",
+        "a62"
+      ],
+      "patronId": 1,
+      "reservationDate": "2025-01-08",
+      "reservationTime": "07:49:32",
+      "price": 130
+    },
+    {
+      "id": 14,
+      "performanceId": 1,
+      "seatId": [
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "patronId": 2,
+      "reservationDate": "2025-01-08",
+      "reservationTime": "09:47:21",
+      "price": 165
+    }
+  ]
+}

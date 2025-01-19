@@ -1,0 +1,135 @@
+body{
+    position: relative
+  }
+.theater{
+    width: 70vw;
+    height: 65vh;
+    background-color: #555;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.stage{
+    width: 90%;
+    height: 10%;
+    background-color: wheat;
+    border: 1px solid blue;
+    margin: 10px auto;
+}
+.seats-a{
+    width: 90%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;    
+}
+.seat-row-left-right{
+    display: grid;
+    width: 20%;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 2px;
+}
+.seat-row-between{
+    display: grid;
+    width: 40%;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 2px;
+}
+.seat-a{
+    width: auto;
+    height: auto;
+    background-color: rgb(222, 235, 247) ;
+    border: 1px solid rgb(181, 211, 253);
+}
+.seat-b{     
+    width: auto;
+    height: auto;
+    background-color:  #fbe5d6;
+    border: 1px solid rgb(246, 175, 128);
+}
+.seat-c{
+    width: auto;
+    height: auto;
+    background-color:  #ccffcc;
+    border: 1px solid rgb(129, 204, 208);
+}
+.fo{
+    font-size: 6px;
+    font-weight: bold;
+}
+#c24, #c32, #c40, #c33, #c34, #c41, #c42, #c175, #c183, #c191, #c181, #c182, #c189, #c190{
+    visibility: hidden;
+}
+.seat-a:hover, .seat-b:hover, .seat-c:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.active{
+    background-color: burlywood;
+}
+.booked{
+    background-color: red;
+}
+.userbooked{
+    background-color: green;
+}
+.reservation-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    width: 90vw;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    background-color: #555;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #f12711, #f5af19) 1;
+
+}
+.booking-form{
+    width: auto;
+    height: auto;
+    padding-top: 30px;
+}
+.booking-form label{
+    color: white;
+}
+#bookR, #cancelR{
+    width: 80%;
+    margin: 20px auto;
+}
+.performance_info {
+    background-color: #949191;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.performance_info div {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.performance_info .pTitle {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.performance_info .pType,
+.performance_info .pDuration,
+.performance_info .pDate {
+    font-style: italic;
+}
+.forInfo{
+    visibility: hidden;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/signin.css">
+    <title>Sign In Page</title>
+    
+</head>
+<body>
+    <div class="signin-container">
+        <h1>Sign Up</h1>
+        <form action="/signup" method="POST">
+            <div class="form-group">
+                <label for="userName">User Name</label>
+                <input type="text" id="userName" name="userName" placeholder="Abebe Meteku" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="email" required>
+                <label for="crediCard">Enter Card</label>
+                <input type="text" id="credit" name="credit" placeholder="1234 5678 9012 3456" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="1234" required>
+                <label for="confirmP">Password</label>
+                <input type="password" id="confirmP" name="confirmP" placeholder="1234" required>
+            </div>            
+            <button type="submit" class="signin-button">Sign Up</button>
+        </form>
+        <div class="forgot-password">
+            <a href="#">Sign Up with google?</a>
+        </div>
+    </div>
+</body>
+</html>

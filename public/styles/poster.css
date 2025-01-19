@@ -1,0 +1,48 @@
+.theater-poster {
+  width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+
+.theater-poster img {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover;
+  display: block;
+}
+.theater-poster .details {
+  padding: 15px;
+}
+
+.theater-poster .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: whitesmoke;
+}
+
+.theater-poster .type, .theater-poster .duration {
+  font-size: 14px;
+  color: whitesmoke;
+  margin: 5px 0;
+}
+
+.theater-poster .date {
+  font-size: 14px;
+  color: whitesmoke;
+  margin: 5px 0;
+}
+
+.posters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  max-width: 90vw;
+  margin: 0 auto;
+}
